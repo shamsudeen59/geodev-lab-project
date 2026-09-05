@@ -15,28 +15,22 @@ Access to healthcare is important for community wellbeing and emergency response
 - Bosso LGA boundary
 - Ward boundaries
 - Health facility locations
-- Settlement locations
-- Road network
-- Population data (optional)
+- Road network  (QuickOSM plugin)
 
 
 ## 4. Data Sources
 
 ### 1. LGA Boundaries
 Source: GRID3 Nigeria Operational LGA Boundaries  
-Link: https://data.grid3.org/
+Link: https://data.grid3.org/ - Geopackage (5 MB)
 
-### 2. Ward Boundaries
-Source: GRID3 Nigeria Operational Wards  
-Link: https://data.grid3.org/
+### 2. GRID3 Nigeria Operational Ward Boundaries 
+Link: https://data.grid3.org/ - Geopackage (200 MB)
 
-### 3. Health Facilities
-Source: GRID3 Nigeria Health Facilities  
-Link: https://data.grid3.org/
+### 3. GRID3 Nigeria Health Facilities 
+Link: https://data.grid3.org/ - Geopackage (17 MB)
 
-### 4. Road Data
-Source: OpenStreetMap  
-Link: https://www.openstreetmap.org/
+### 4. Road Data ( QGIS QuickOSM plugin )
 
 ## 5. What I Will Build
 
