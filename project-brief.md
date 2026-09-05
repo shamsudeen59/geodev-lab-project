@@ -2,7 +2,7 @@
 
 ## 1. The Question
 
-Which communities in Bosso Local Government Area, Niger State, are more than 5 km from the nearest health facility?
+Which wards in Bosso Local Government Area, Niger State, are more than 5 km from the nearest health facility?
 
 
 ## 2. Why It Matters
@@ -20,8 +20,7 @@ Access to healthcare is important for community wellbeing and emergency response
 
 ## 4. Data Sources
 
-### 1. LGA Boundaries
-Source: GRID3 Nigeria Operational LGA Boundaries  
+### 1. GRID3 Nigeria Operational LGA Boundaries
 Link: https://data.grid3.org/ - Geopackage (5 MB)
 
 ### 2. GRID3 Nigeria Operational Ward Boundaries 
