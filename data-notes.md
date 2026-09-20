@@ -92,6 +92,15 @@ Null : Unnamed local access tracks lack name attributes.
 Coverage Observations or Gaps: Contains major highways, primary arterial roads, secondary routes, and local access paths providing transportation connectivity across the ward.
 
 
+## CRS and Preparation
+
+- All source layers were in EPSG:4326 (WGS 84).
+- Study area: Garatu Ward, Bosso LGA, Niger State, Nigeria.
+- All layers were clipped to the study area: Garatu health facilities and Garatu highways from QuickOSM. The clipped layers were then reprojected to EPSG:32632 (WGS 84 / UTM zone 32N).
+- Area check: 321.00 km².
+- Working files are stored in data/processed/; raw files remain untouched.
+
+
 ## Data Methodology Summary
 
 Administrative Boundary (GARATU_ward):Defines the primary geographic boundary and spatial extent (321.00 sq. km) for Garatu Ward within Bosso LGA.
