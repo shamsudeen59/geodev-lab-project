@@ -1,109 +1,180 @@
-# data_notes.md
+# Data notes
 
-## Project Information
+**Week 2 deliverable.** GeoDev Lab Africa, Cohort One.  
+**Author:** Shamsudeen Muhammad
 
-Project Name: Health Facility Distribution and Proximity Analysis
-Study Area: Garatu Ward
-LGA: Bosso Local Government Area
-State: Niger State
-Country: Nigeria (ISO3: NGA)
-Spatial Area Measurement: 321.00 sq. km
+What I downloaded, where it came from, what is in it, and what is wrong with it.
 
-## Datasets Used
+---
 
-### 1. Nigeria Operational Wards
-Dataset : GARATU_ward
-Data Source: GRID3 ( https://data.grid3.org )
-Download : 2026-09-10
-Dataset Version: v3.0
-Study Area / Coverage: Garatu Ward, Bosso LGA, Niger State, Nigeria
-Number of Features : 1 feature
-Geometry Type: Polygon (Vector)
-  Columns :
-  country  (Text) — Country name (Nigeria)
-  iso3 (Text) — Country ISO3 code (NGA)
-  state (Text) — State name (Niger)
-  statecode (Text) — State code (NI)
-  lga (Text) — Local Government Area (Bosso)
-  lga_alt_na (Text) — Alternate LGA name
-  ward (Text) — Ward name (Garatu)
-  ward_alt_n (Text) — Alternate ward name
-  ward_v1_gr (Text) — Ward version group
-  ward_in_gr (Text) — Ward index code (1.00000000000)
-  multipart_ (Text) — Multipart geometry indicator (1.00000000000)
-  source (Text) — Data provenance (CIESIN)
-  date (Text) — Layer record date (2026-06-30)
-  area_sqkm (Real/Double) — Total ward surface area (321.000000000000)
-  Data Types of Important Fields:** Text, Real/Double
-  Null :  NULL values recorded in lga_alt_na, ward_alt_n, and ward_v1_gr.
-  Coverage Observations : Single polygon fully delineating the administrative boundary of Garatu Ward.
+## Summary
 
-### 2. Health Facilities Layer
-Dataset : Health Facilities
-Data Source: GRID3 (https://data.grid3.org)
-Download : 2026-09-10
-Dataset Version: v3.0
-Study Area / Coverage: Garatu Ward and immediate vicinity (Bosso LGA)
-Number of Features : 13 point features identified in the study layout
-Geometry Type: Point (Vector)
-Important Columns : Facility Name, Location Coordinates
-Data Types of Important Fields: Text, Point Geometry
-Null : 76
-Coverage Observations : Point locations cover primary health centers, maternity homes, clinics, and health posts within and immediately surrounding the Garatu Ward boundary.
-Confirmed Health Facilities List:
-  1. Alura Primary Health Center
-  2. Bangifu Baby Friendly Hospital
-  3. Garatu Health Center / Tsohon Daga Primary Health Centre
-  4. Gbata Primary Health Centre
-  5. Gidan Kwano Primary Health Centre
-  6. Gidan Mongoro Primary Health Centre
-  7. Kodoko Health Post
-  8. Lunko Primary Health Centre
-  9. Mai Unguwar Bosso Health Post
-  10. Pompo Health Post
-  11. Sabon Daga Primary Health Centre
-  12. Sabon Lunko Primary Health Center
-  13. Zamani Maternity Home Clinic
+| # | Dataset | Type | Retrieved | Status |
+|---|---|---|---|---|
+| 1 | Nigeria Operational Wards (`GARATU_ward`) | Vector | 2026-09-10 | OK |
+| 2 | Health Facilities Layer | Vector | 2026-09-10 | OK |
+| 3 | Bosso LGA Operational Boundary | Vector | 2026-09-10 | OK |
+| 4 | Major Highways and Local Access Roads | Vector | 2026-09-13 | OK |
 
-### 3. LGA Operational Boundary
-Dataset : Bosso LGA Boundary
-Data Source: GRID3 (https://data.grid3.org)
-Download :  2026-09-10
-Dataset Version:  v3.0
-Study Area / Coverage: Bosso Local Government Area, Niger State
-Number of Features / Records: 1 feature
-Geometry Type: Polygon (Vector)
-Important Columns / Fields: country, state, lga, source
-Data Types of Important Fields: Text, Polygon Geometry
-Null : Not recorded
-Coverage Observations : Provides the surrounding local government contextual boundary for Garatu Ward.
+---
 
-### 4. Road Network
-Dataset / Layer Name: Major Highways and Local Access Roads
-Data Source: OpenStreetMap (via QuickOSM tool)
-Download :   2026-09-13
-Dataset Version: OpenStreetMap live dataset
-Study Area / Coverage: Garatu Ward and connecting transport corridors in Bosso LGA
-Number of Features : Multiple line features
-Geometry Type: Line / Polyline (Vector)
-Important Columns : highway, name, ref
-Data Types of Important Fields: Text, Line Geometry
-Null : Unnamed local access tracks lack name attributes.
-Coverage Observations or Gaps: Contains major highways, primary arterial roads, secondary routes, and local access paths providing transportation connectivity across the ward.
+## 1. Nigeria Operational Wards (`GARATU_ward`)
 
+* **Source:** https://data.grid3.org (Data Producer: CIESIN)
+* **Retrieved:** 2026-09-10
+* **File:** `data/raw/GARATU_ward.gpkg`
+* **Format:** GeoPackage
+* **Geometry type:** Polygon (Vector)
+* **Feature count:** 1 feature
+* **CRS as downloaded:** EPSG:4326 (WGS 84)
+
+### Key columns
+
+| Column | What it holds | Nulls |
+|---|---|---|
+| `country` | Country name (`Nigeria`) | 0 |
+| `iso3` | Country ISO3 code (`NGA`) | 0 |
+| `state` | State name (`Niger`) | 0 |
+| `statecode` | State code (`NI`) | 0 |
+| `lga` | Local Government Area (`Bosso`) | 0 |
+| `lga_alt_na` | Alternate LGA name | Recorded NULLs |
+| `ward` | Ward name (`Garatu`) | 0 |
+| `ward_alt_n` | Alternate ward name | Recorded NULLs |
+| `ward_v1_gr` | Ward version group | Recorded NULLs |
+| `ward_in_gr` | Ward index code (`1.00000000000`) | 0 |
+| `multipart_` | Multipart geometry indicator (`1.00000000000`) | 0 |
+| `source` | Data provenance (`CIESIN`) | 0 |
+| `date` | Layer record date (`2026-06-30`) | 0 |
+| `area_sqkm` | Total ward surface area (`321.000000000000`) | 0 |
+
+### What I noticed
+
+The dataset contains one polygon that fully delineates the administrative boundary of Garatu Ward. The important administrative fields correctly identify the area as Garatu Ward, Bosso LGA, Niger State, Nigeria.
+
+`NULL`values were recorded in (`lga_alt_na`, `ward_alt_n`, and `ward_v1_gr`). These are alternate or supporting fields and do not prevent the ward from being identified using the main administrative fields.
+
+The recorded ward area is 321.00 km².
+
+---
+
+## 2. Health Facilities Layer
+
+* **Source:** https://data.grid3.org
+* **Retrieved:** 2026-09-10
+* **File:** `data/raw/health_facilities.gpkg`
+* **Format:** GeoPackage
+* **Geometry type:** Point (Vector)
+* **Feature count:** 16 features in the attribute table 
+* **CRS as downloaded:** EPSG:4326 (WGS 84)
+
+### Key columns
+
+| Column | What it holds | Nulls |
+|---|---|---|
+| `facility_n` | Name of the health facility | 0 |
+| `latitude` | Latitude coordinate | 0 |
+| `longitude` | Longitude coordinate | 0 |
+| `facility_l` | Facility level | 4 |
+| `facility_t` | Facility type | 4 |
+| `facility_o` | Facility ownership | 4 |
+| `functional` | Facility functional status | 4 |
+| `alt_name` | Alternative facility name | 6 |
+| `settlement` | Settlement type/location | 0 |
+| `date_creat` | Facility record creation date | 6 |
+| `issues` | Recorded data-quality issues | 12 |
+### What I noticed
+
+The attribute table contains 16 health-facility records, while 14 locations are visible on the map. Some records are flagged as clustered with another point within 50 m and 100 m, which may explain the difference and requires further quality checking.
+
+The dataset also contains additional information on facility level, type, ownership, functional status, settlement, and other metadata. Some secondary attributes contain null values, while the facility names and latitude/longitude fields are populated for all 16 records.
+
+**Confirmed Facilities List:**
+1. Alura Primary Health Center
+2. Bangifu Baby Friendly Hospital
+3. Garatu Health Center / Tsohon Daga Primary Health Centre
+4. Gbata Primary Health Centre
+5. Gidan Kwano Primary Health Centre
+6. Gidan Mongoro Primary Health Centre
+7. Kodoko Health Post
+8. Lunko Primary Health Centre
+9. Mai Unguwar Bosso Health Post
+10. Pompo Health Post
+11. Sabon Daga Primary Health Centre
+12. Sabon Lunko Primary Health Center
+13. Zamani Maternity Home Clinic
+
+---
+
+## 3. Bosso LGA Operational Boundary
+
+* **Source:** https://data.grid3.org
+* **Retrieved:** 2026-09-10
+* **File:** `data/raw/bosso_lga_boundary.gpkg`
+* **Format:** GeoPackage
+* **Geometry type:** Polygon (Vector)
+* **Feature count:** 1 feature
+* **CRS as downloaded:** EPSG:4326 (WGS 84)
+
+### Key columns
+
+| Column | What it holds | Nulls |
+|---|---|---|
+| `country` | Country name (`Nigeria`) | 0 |
+| `state` | State name (`Niger`) | 0 |
+| `lga` | LGA name (`Bosso`) | 0 |
+| `source` | Data source attribution | 0 |
+
+### What I noticed
+
+The dataset contains one polygon representing Bosso Local Government Area, Niger State. It provides the wider administrative context for the Garatu Ward study area.
+
+No null values were recorded in the important fields.
+
+The LGA boundary is not the main analysis boundary, but it helps confirm the location of Garatu Ward within Bosso LGA.
+
+---
+
+## 4. Major Highways and Local Access Roads
+
+* **Source:** OpenStreetMap (via QGIS QuickOSM plugin)
+* **Retrieved:** 2026-09-13
+* **File:** `data/raw/roads_osm.gpkg`
+* **Format:** GeoPackage
+* **Geometry type:** Line / Polyline (Vector)
+* **Feature count:** Multiple line features
+* **CRS as downloaded:** EPSG:4326 (WGS 84)
+
+### Key columns
+
+| Column | What it holds | Nulls |
+|---|---|---|
+| `highway` | Road classification (primary, secondary, residential) | 0 |
+| `name` | Road/street name | Present on major highways; NULL on local tracks |
+| `ref` | Official route number/reference code | Present on primary arterial routes |
+
+### What I noticed
+
+The road network contains major highways, primary arterial roads, secondary routes, and local access paths connecting areas across Garatu Ward and the surrounding parts of Bosso LGA.
+
+Some local access tracks do not have name attributes. This does not prevent the roads from being used as spatial data, but it means that some roads cannot be identified by name.
+
+The road data was obtained through the `QuickOSM` plugin and clipped to the study area.
+---
+
+## Cross-cutting problems
+
+* **Unprojected Geographic Coordinate System:** All raw datasets arrived in EPSG:4326 (WGS 84). Performing distance or buffer analysis directly in geographic degrees introduces significant distortion. All layers was clipped and reprojected to EPSG:32632 (WGS 84 / UTM Zone 32N) prior to proximity modeling.
+* **Extent Mismatch:** Raw layers cover wider administrative regions (national/state/LGA levels). Clipping to the Garatu Ward study area boundary is required to isolate local features and streamline processing.
+
+---
 
 ## CRS and Preparation
 
-- All source layers were in EPSG:4326 (WGS 84).
-- Study area: Garatu Ward, Bosso LGA, Niger State, Nigeria.
-- All layers were clipped to the study area: Garatu health facilities and Garatu highways from QuickOSM. The clipped layers were then reprojected to EPSG:32632 (WGS 84 / UTM zone 32N).
-- Area check: 321.00 km².
-- Working files are stored in data/processed/; raw files remain untouched.
+* **Source CRS:** All source layers arrived in EPSG:4326 (WGS 84).
+* **Study Area:** Garatu Ward, Bosso LGA, Niger State, Nigeria (~321.00 sq. km).
+* **Geoprocessing:** Clipped health facilities and OSM road networks to the Garatu Ward boundary, then reprojected all clipped layers to **EPSG:32632 (WGS 84 / UTM Zone 32N)**.
+* **Storage:** Working files are stored in `data/processed/`; raw files remain untouched in `data/raw/`.
 
+---
 
-## Data Methodology Summary
-
-Administrative Boundary (GARATU_ward):Defines the primary geographic boundary and spatial extent (321.00 sq. km) for Garatu Ward within Bosso LGA.
-Health Facilities Layer: Supplies point geometries and names for healthcare facilities to evaluate geographic distribution and service access within the study area.
-LGA Operational Boundary: Provides broader administrative context connecting Garatu Ward to the wider Bosso Local Government Area.
-Road Network: Maps transportation corridors and local roads to analyze physical access routes connecting population settlement centers to health facilities.
+**Status:** Week 2 complete. Reprojection and quality checks in Week 3, see [data-preparation.md](data-preparation.md).
