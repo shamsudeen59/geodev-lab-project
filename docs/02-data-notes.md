@@ -177,4 +177,4 @@ The road data was obtained through the `QuickOSM` plugin and clipped to the stud
 
 ---
 
-**Status:** Week 2 complete. Reprojection and quality checks in Week 3, see [data-preparation.md](data-preparation.md).
+**Status:** Week 2 complete. Reprojection and quality checks in Week 3, see [data-preparation.md](03-data-preparation.md).
