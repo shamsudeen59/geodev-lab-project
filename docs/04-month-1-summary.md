@@ -88,7 +88,7 @@ I completed my first spatial analysis for the project by creating 5-kilometer bu
 
 The map below shows the result of the Week 4 buffer analysis:
 
-![Garatu Ward 5 km Health Facility Buffer Analysis](geodev_lab M1.png)
+![Garatu Ward 5 km Health Facility Buffer Analysis](geodev_labM1.png)
 
 The analysis provides the basis for identifying areas of Garatu Ward that fall within and outside the defined 5-kilometer health facility accessibility zone.
 
