@@ -68,4 +68,4 @@ The health facility and road network layers were clipped to the Garatu Ward stud
 
 ---
 
-**Status:** Week 3 complete. First spatial analysis in Week 4.
+**Status:** Week 3 complete. see the First spatial analysis in Week 4. [month-1-summary.md](04-month-1-summary.md)
