@@ -50,4 +50,4 @@ The analysis should be reproducible in QGIS using the documented datasets and wo
 ---
 
 **Status:** Week 1 complete. Data acquisition in Week 2, see
-[data-notes.md](data-notes.md).
+[data-notes.md](02-data-notes.md).
