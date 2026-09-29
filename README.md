@@ -38,3 +38,5 @@ Garatu-Ward-Health-Facility-Accessibility/
 - [x] Week 4, first spatial analysis, checked four ways
 
 ---
+
+For complete project details, see **[Project Brief](docs/01-project-brief.md)**
