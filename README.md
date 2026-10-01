@@ -15,7 +15,7 @@ This project uses GIS and spatial analysis to identify which parts of Garatu War
 ```text
 Garatu-Ward-Health-Facility-Accessibility/
 
-├── month-1/
+├── docs/
 │   ├── 01-project-brief.md       Week 1
 │   ├── 02-data-notes.md          Week 2
 │   ├── 03-data-preparation.md    Week 3
