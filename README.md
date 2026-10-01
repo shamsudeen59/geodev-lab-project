@@ -15,7 +15,7 @@ This project uses GIS and spatial analysis to identify which parts of Garatu War
 ```text
 Garatu-Ward-Health-Facility-Accessibility/
 
-├── docs/
+├── month-1/
 │   ├── 01-project-brief.md       Week 1
 │   ├── 02-data-notes.md          Week 2
 │   ├── 03-data-preparation.md    Week 3
@@ -36,6 +36,16 @@ Garatu-Ward-Health-Facility-Accessibility/
 - [x] Week 2, data downloaded, opened and described
 - [x] Week 3, reprojected, clipped and quality checked
 - [x] Week 4, first spatial analysis, checked four ways
+
+## [x] Month 1 completed
+
+---
+
+- [x] Week 5, set up Python, VS Code and the terminal; hello.py runs
+- [ ] Week 6, environments and project setup configured with uv
+- [ ] Week 7, core Python fundamentals and the six ideas implemented
+- [ ] Week 8, data files loaded, parsed, and inspected with Python
+- [ ] Week 9, code consolidation, refactoring, and capstone summary report
 
 ---
 
