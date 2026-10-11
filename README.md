@@ -20,7 +20,13 @@ Garatu-Ward-Health-Facility-Accessibility/
 │   ├── 02-data-notes.md          Week 2
 │   ├── 03-data-preparation.md    Week 3
 │   └── 04-month-1-summary.md     Week 4
-
+├── screenshots/
+│   ├── week5.png
+│   └── week6.png
+├── check.py
+├── hello.py
+├── pyproject.toml
+└── uv.lock
 ├── data/
 │   ├── raw/                      downloads, not committed
 │   └── processed/                outputs, not committed
@@ -41,8 +47,10 @@ Garatu-Ward-Health-Facility-Accessibility/
 
 ---
 
+## Month 2: development environment and early Python
+
 - [x] Week 5, set up Python, VS Code and the terminal; hello.py runs
-- [ ] Week 6, environments and project setup configured with uv
+- [x] Week 6, environments and project setup configured with uv
 - [ ] Week 7, core Python fundamentals and the six ideas implemented
 - [ ] Week 8, data files loaded, parsed, and inspected with Python
 - [ ] Week 9, code consolidation, refactoring, and capstone summary report
