@@ -26,10 +26,13 @@ Garatu-Ward-Health-Facility-Accessibility/
 │   ├── week7_01.png
 │   ├── week7_02.png
 │   ├── week7_03.png
-│   └── week7_04.png
+│   ├── week7_04.png
+│   └── week8.png
 ├── analyse.py
 ├── check.py
+├── garatu_health_facilities.csv
 ├── hello.py
+├── inspect_data.py
 ├── pyproject.toml
 ├── uv.lock
 └── wards.csv
@@ -58,7 +61,7 @@ Garatu-Ward-Health-Facility-Accessibility/
 - [x] Week 5, set up Python, VS Code and the terminal; hello.py runs
 - [x] Week 6, environments and project setup configured with uv
 - [x] Week 7, core Python fundamentals and the six ideas implemented
-- [ ] Week 8, data files loaded, parsed, and inspected with Python
+- [X] Week 8, data files loaded, parsed, and inspected with Python
 - [ ] Week 9, code consolidation, refactoring, and capstone summary report
 
 ---
