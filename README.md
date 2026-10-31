@@ -27,13 +27,15 @@ Garatu-Ward-Health-Facility-Accessibility/
 │   ├── week7_02.png
 │   ├── week7_03.png
 │   ├── week7_04.png
-│   └── week8.png
+│   ├── week8.png
+│   └── week9.png
 ├── analyse.py
 ├── check.py
 ├── garatu_health_facilities.csv
 ├── hello.py
 ├── inspect_data.py
 ├── pyproject.toml
+├── summary.py
 ├── uv.lock
 └── wards.csv
 ├── data/
@@ -52,7 +54,13 @@ Garatu-Ward-Health-Facility-Accessibility/
 - [x] Week 3, reprojected, clipped and quality checked
 - [x] Week 4, first spatial analysis, checked four ways
 
-## [x] Month 1 completed
+---
+
+## Month 1 Summary
+
+This month, I gained practical experience in using QGIS to analyze health facility accessibility in Garatu Ward, Bosso LGA. I learned how to prepare spatial datasets, work with coordinate reference systems, and perform 5 km buffer analysis. One important lesson was understanding how overlapping buffers can be dissolved to show overall coverage more clearly. This project strengthened my understanding of GIS workflows and how spatial analysis can help investigate real world problems.
+
+## Month 1 completed
 
 ---
 
@@ -62,8 +70,15 @@ Garatu-Ward-Health-Facility-Accessibility/
 - [x] Week 6, environments and project setup configured with uv
 - [x] Week 7, core Python fundamentals and the six ideas implemented
 - [X] Week 8, data files loaded, parsed, and inspected with Python
-- [ ] Week 9, code consolidation, refactoring, and capstone summary report
+- [X] Week 9, code consolidation, refactoring, and capstone summary report
 
 ---
+
+## Month 2 reflection
+
+This month, I learned how to use Python to read, inspect, and analyse data from CSV files. The idea that finally became clearer to me was how functions help organise code into smaller sections, making it easier to understand and reuse. I am still working on becoming more confident with dictionaries, loops, and handling missing or incorrect data. My capstone helped me understand my Month 1 GIS dataset better by summarising its latitude and longitude values and showing the range and number of records in each column.
+
+## Month 2 completed
+
 
 For complete project details, see **[Project Brief](docs/01-project-brief.md)**
