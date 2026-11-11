@@ -141,37 +141,23 @@ The following Python scripts are used for the independent exercise.
 The Week 10 project uses the following folder structure:
 
 ```text
-month-03/
-└── week-10/
-    │
-    ├── explore_pandas.py
-    ├── filter_sort.py
-    ├── explore_layer.py
-    ├── geom_props.py
-    ├── csv_to_points.py
-    ├── join_population.py
-    ├── make_map.py
-    ├── save_outputs.py
-    │
-    ├── my_explore.py
-    ├── my_points.py
-    ├── my_join.py
-    ├── my_map.py
-    │
-    ├── my_map.png
-    └── README.md
-
-datas/
-│
-├── raw/
-│   ├── garatu_health_facilities.csv
-│   └── garatu_ward.csv
-│
-└── processed/
-    ├── garatu_roads.gpkg
-    ├── garatu_ward.gpkg
-    ├── garatu_facilities.gpkg
-    └── garatu_facilities_with_ward.gpkg
+ month-03/
+    └── week-10/
+        ├── README.md
+        ├── explore_pandas.py
+        ├── filter_sort.py
+        ├── explore_layer.py
+        ├── geom_props.py
+        ├── csv_to_points.py
+        ├── join_population.py
+        ├── make_map.py
+        ├── save_outputs.py
+        ├── facilities_map.png
+        ├── my_explore.py
+        ├── my_points.py
+        ├── my_join.py
+        ├── my_map.py
+        └── my_map.png
 ```
 
 ---

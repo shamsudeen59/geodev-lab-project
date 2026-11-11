@@ -15,11 +15,47 @@ This project uses GIS and spatial analysis to identify which parts of Garatu War
 ```text
 Garatu-Ward-Health-Facility-Accessibility/
 
+geodev-lab-project/
+│
+├── data/
+│   ├── raw/
+│   │   ├── ward_population.csv
+│   │   ├── health_facilities.csv
+│   │   ├── garatu_health_facilities.csv
+│   │   └── garatu_ward.csv
+│   │
+│   └── processed/
+│       ├── wards.gpkg
+│       ├── roads.gpkg
+│       ├── facilities.gpkg
+│       ├── week10_outputs.gpkg
+│       ├── garatu_roads.gpkg
+│       ├── garatu_ward.gpkg
+│       ├── garatu_facilities.gpkg
+│       └── garatu_facilities_with_ward.gpkg
+│
 ├── docs/
 │   ├── 01-project-brief.md       Week 1
 │   ├── 02-data-notes.md          Week 2
 │   ├── 03-data-preparation.md    Week 3
 │   └── 04-month-1-summary.md     Week 4
+├──month-03/
+    └── week-10/
+        ├── README.md
+        ├── explore_pandas.py
+        ├── filter_sort.py
+        ├── explore_layer.py
+        ├── geom_props.py
+        ├── csv_to_points.py
+        ├── join_population.py
+        ├── make_map.py
+        ├── save_outputs.py
+        ├── facilities_map.png
+        ├── my_explore.py
+        ├── my_points.py
+        ├── my_join.py
+        ├── my_map.py
+        └── my_map.png
 ├── screenshots/
 │   ├── week5.png
 │   ├── week6.png
@@ -29,18 +65,20 @@ Garatu-Ward-Health-Facility-Accessibility/
 │   ├── week7_04.png
 │   ├── week8.png
 │   └── week9.png
+├── src/
+│   └── geodev_lab_project/
+│       └── __init__.py
+├── .gitignore
 ├── analyse.py
 ├── check.py
 ├── garatu_health_facilities.csv
 ├── hello.py
 ├── inspect_data.py
 ├── pyproject.toml
+├── README.md
 ├── summary.py
 ├── uv.lock
 └── wards.csv
-├── data/
-│   ├── raw/                      downloads, not committed
-│   └── processed/                outputs, not committed
 
 ├── scripts/
 
@@ -80,5 +118,16 @@ This month, I learned how to use Python to read, inspect, and analyse data from 
 
 ## Month 2 completed
 
+---
+
+## Month 03 - Geospatial Python And Automation
+
+- [x] Week 10: GeoPandas, layers as tables
+- [ ] Week 11: Coordinate reference systems and spatial operations
+- [ ] Week 12: Rasters with Rasterio
+- [ ] Week 13: Batch processing and automation
+- [ ] Week 14: Build week, your analysis pipeline 
+
+---
 
 For complete project details, see **[Project Brief](docs/01-project-brief.md)**
