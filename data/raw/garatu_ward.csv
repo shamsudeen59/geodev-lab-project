@@ -1,0 +1,2 @@
+fid,country,iso3,state,statecode,lga,lga_alt_na,ward,ward_alt_n,ward_v1_gr,ward_in_gr,multipart_,source,date,area_sqkm
+1,Nigeria,NGA,Niger,NI,Bosso,,Garatu,,,1,1,CIESIN,2026-06-30,321
