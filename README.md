@@ -42,38 +42,38 @@ geodev-lab-project/
 │   ├── 02-data-notes.md          Week 2
 │   ├── 03-data-preparation.md    Week 3
 │   └── 04-month-1-summary.md     Week 4
-├──month-03/
-    └── week-10/
-        ├── README.md
-        ├── explore_pandas.py
-        ├── filter_sort.py
-        ├── explore_layer.py
-        ├── geom_props.py
-        ├── csv_to_points.py
-        ├── join_population.py
-        ├── make_map.py
-        ├── save_outputs.py
-        ├── facilities_map.png
-        ├── my_explore.py
-        ├── my_points.py
-        ├── my_join.py
-        ├── my_map.py
-        └── my_map.png
-    └── week-11/
-        ├── area_wrong_and_right.py
-        ├── set_vs_to.py
-        ├── one_point.py
-        ├── spatial_ops.py
-        ├── coverage_gap.py
-        ├── nearest.py
-        ├── clip_dissolve.py
-        ├── my_crs.py
-        ├── my_count.py
-        ├── my_validity.py
-        ├── my_reach.py
-        ├──garatu_coverage_map.png
-        ├── README.md
-        └── fix_geometry.py
+├── month-03/
+│   ├── week-10/
+│   │   ├── README.md
+│   │   ├── csv_to_points.py
+│   │   ├── explore_layer.py
+│   │   ├── explore_pandas.py
+│   │   ├── facilities_map.png
+│   │   ├── filter_sort.py
+│   │   ├── geom_props.py
+│   │   ├── join_population.py
+│   │   ├── make_map.py
+│   │   ├── my_explore.py
+│   │   ├── my_join.py
+│   │   ├── my_map.png
+│   │   ├── my_map.py
+│   │   ├── my_points.py
+│   │   └── save_outputs.py
+│   └── week-11/
+│       ├── area_wrong_and_right.py
+│       ├── set_vs_to.py
+│       ├── one_point.py
+│       ├── spatial_ops.py
+│       ├── coverage_gap.py
+│       ├── nearest.py
+│       ├── clip_dissolve.py
+│       ├── my_crs.py
+│       ├── my_count.py
+│       ├── my_validity.py
+│       ├── my_reach.py
+│       ├── garatu_coverage_map.png
+│       ├── README.md
+│       └── fix_geometry.py
 ├── screenshots/
 │   ├── week5.png
 │   ├── week6.png

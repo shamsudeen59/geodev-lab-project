@@ -110,7 +110,7 @@ The Week 11 project uses the following folder structure:
 
 ```text
 month-03/
-└── week-10/
+├── week-10/
 └── week-11/
     ├── area_wrong_and_right.py
     ├── set_vs_to.py
