@@ -32,6 +32,9 @@ geodev-lab-project/
 │       ├── garatu_roads.gpkg
 │       ├── garatu_ward.gpkg
 │       ├── garatu_facilities.gpkg
+│       ├── garatu_facility_counts.gpkg
+│       ├── garatu_ward_validated.gpkg
+│       ├── garatu_coverage_analysis.gpkg
 │       └── garatu_facilities_with_ward.gpkg
 │
 ├── docs/
@@ -56,6 +59,21 @@ geodev-lab-project/
         ├── my_join.py
         ├── my_map.py
         └── my_map.png
+    └── week-11/
+        ├── area_wrong_and_right.py
+        ├── set_vs_to.py
+        ├── one_point.py
+        ├── spatial_ops.py
+        ├── coverage_gap.py
+        ├── nearest.py
+        ├── clip_dissolve.py
+        ├── my_crs.py
+        ├── my_count.py
+        ├── my_validity.py
+        ├── my_reach.py
+        ├──garatu_coverage_map.png
+        ├── README.md
+        └── fix_geometry.py
 ├── screenshots/
 │   ├── week5.png
 │   ├── week6.png
@@ -123,7 +141,7 @@ This month, I learned how to use Python to read, inspect, and analyse data from 
 ## Month 03 - Geospatial Python And Automation
 
 - [x] Week 10: GeoPandas, layers as tables
-- [ ] Week 11: Coordinate reference systems and spatial operations
+- [x] Week 11: Coordinate reference systems and spatial operations
 - [ ] Week 12: Rasters with Rasterio
 - [ ] Week 13: Batch processing and automation
 - [ ] Week 14: Build week, your analysis pipeline 
